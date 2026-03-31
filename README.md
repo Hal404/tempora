@@ -1,144 +1,29 @@
-<div align="center">
-  <div style="display: inline-block; vertical-align: middle;">
-    <img src="docs/time-rs-cli.png" alt="Time-RS CLI Logo" width="128" style="border-radius: 12px;"/>
-  </div>
-  <div style="display: inline-block; vertical-align: middle; margin-left: 16px;">
-    <h1 style="margin: 0; padding: 0;">Time-RS CLI</h1>
-  </div>
-</div>
+<header align="center">
+  <h1 style="margin: 0; padding: 0; border-bottom: none;">Tempora</h1>
+  <p style="margin: 0; padding: 0;">Based on Time-RS</p>
+</header>
 
-
-<h6 align="center" style="color:#bac2de;">
-  A minimal Catppuccin-themed TUI countdown timer.
-</h6>
-
-<p align="center">
-  <!-- GitHub Stars -->
-  <a href="https://github.com/ryu-ryuk/time-rs-cli/stargazers">
-    <img src="https://img.shields.io/badge/Stars-★%20%7C%20ryu--ryuk%2Ftime--rs--cli-cba6f7?style=for-the-badge&labelColor=1e1e2e&color=cba6f7&logo=github&logoColor=cdd6f4" alt="GitHub Stars"/>
-  </a>
-  <!-- GitHub Issues -->
-  <a href="https://github.com/ryu-ryuk/time-rs-cli/issues">
-    <img src="https://img.shields.io/badge/Issues-Open-f38ba8?style=for-the-badge&labelColor=1e1e2e&color=f38ba8&logo=github&logoColor=cdd6f4" alt="GitHub Issues"/>
-  </a>
-<!-- License -->
-<a href="https://github.com/ryu-ryuk/time-rs-cli/blob/main/LICENSE">
-  <img src="https://img.shields.io/badge/License-MIT-89b4fa?style=for-the-badge&labelColor=1e1e2e&color=89b4fa&logo=openaccess&logoColor=cdd6f4" alt="MIT License"/>
-</a>
-<!-- AUR -->
-<a href="https://aur.archlinux.org/packages/timers">
-  <img src="https://img.shields.io/badge/AUR-timers-b4befe?style=for-the-badge&logo=arch-linux&logoColor=white&labelColor=1e1e2e" alt="AUR Timers"/>
-</a>
-
-
-
-<p align="center">
-  <!-- Rust Edition -->
-  <img src="https://img.shields.io/badge/Rust-2024--edition-89b4fa?style=for-the-badge&logo=rust&logoColor=white&labelColor=1e1e2e&color=89b4fa" alt="Rust 2024 Edition"/>
-  <!-- Ratatui -->
-  <img src="https://img.shields.io/badge/ratatui-Terminal_UI-b4befe?style=for-the-badge&logo=gnome-terminal&logoColor=white&labelColor=1e1e2e&color=b4befe" alt="ratatui Terminal UI"/>
-  <!-- Theme -->
-  <img src="https://img.shields.io/badge/Theme-Catppuccin_Mocha-f5c2e7?style=for-the-badge&logo=palette&logoColor=white&labelColor=1e1e2e&color=f5c2e7" alt="Catppuccin Mocha Theme"/>
-  <!-- Platform -->
-  <img src="https://img.shields.io/badge/Platform-Portable_(Linux/Mac/WSL)-a6e3a1?style=for-the-badge&logo=linux&logoColor=white&labelColor=1e1e2e&color=a6e3a1" alt="Platform Portable"/>
+<hr><br>
+<p align="center" style="color:#a6adc8; font-size: 14.5px; line-height: 1.6; max-width: 700px; margin: auto;">
+  Tempora is <i>aspiring</i> to be a general timing utility based on the [Time-RS](https://github.com/ryu-ryuk/time-rs-cli) project. I discovered [Time-RS](https://github.com/ryu-ryuk/time-rs-cli) when looking for a simple CLI timer, and after using it, I decided that I could fork it and try to make it better. Normally, I would contribute to the project directly, but there's been zero activity for roughly nine months at the time of writing, and I could use a project to practice with Rust, so why not?
 </p>
 
+<figure align="center" style="color:#a6adc8; font-size: 14.5px; line-height: 1.6; max-width: 700px; margin: auto;">
+  <figcaption><h3>Goals:</h3></figcaption>
+    <li>Implement a full timing suite; countup, countdown, pomodoro, alert/alarm, etc.</li>
+    <li>Convert project to a core/module-based system</li>
+    <li>Add in optional GUI</li>
+    <li>Patch the broken TUI state as currently handled</li>
+    <li>Patch the double-input bug as currently handled</li>
+<br>
+</figure>
 
 <p align="center" style="color:#a6adc8; font-size: 14.5px; line-height: 1.6; max-width: 700px; margin: auto;">
-  <strong style="color:#cdd6f4;">Time-RS CLI</strong> is a highly minimal, distraction-free terminal countdown timer.<br/>
-  Built in <span style="color:#89b4fa;">Rust</span> using <span style="color:#b4befe;">ratatui</span> and themed with <span style="color:#f5c2e7;">Catppuccin Mocha</span>.<br/>
-  Perfect for Pomodoros, build pauses, CLI workflows, or just flexing nerdy timers in your terminal.
+  The development pace will be slow, as things are pretty up-in-the-air for me personally, but I'll try and focus on this as much as time allows in the near future.
 </p>
 
----
-
-## Preview
-
-<p align="center">
-  <img src="docs/preview.gif" alt="Preview of Time-RS CLI" width="85%"/>
-</p>
-
----
-
-
-
-## Installation
-
-<p align="center">
-  <a href="https://scripts.alokranjan.me/time-rs-cli/install.sh">
-    <img src="https://img.shields.io/badge/Install%20via%20curl-time--rs--cli-94e2d5?style=for-the-badge&logo=terminal&logoColor=white&labelColor=1e1e2e&color=94e2d5" alt="Install via curl"/>
-  </a><a href="https://aur.archlinux.org/packages/timers">
-    <img src="https://img.shields.io/badge/AUR-timers-89dceb?style=for-the-badge&logo=arch-linux&logoColor=white&labelColor=1e1e2e" alt="AUR Timers"/>
-  </a>
-</p>
-
-
-### Install using CURL 
-
-```sh
-curl -sSL https://scripts.alokranjan.me/time-rs-cli/install.sh | bash
-```
-
-> Installs the latest prebuilt binary from GitHub Releases.<br>
-> Currently supports: `linux-x86_64`
-
-### Arch Linux / Manjaro (via AUR)
-
-```sh
-yay -S timers
-```
-> you can also use paru or any other AUR helper.
-
-## Features
-
-* ⌨️ TUI controls:
-  - `r` — restart timer
-  - `j/k` — add/subtract 10s
-  - `h` — show/hide help
-  - `esc` — close help
-  - `q` — quit
-  - `p` - pomodoro timer
-  - `m` - manual set time
-
-* Catppuccin Mocha theming (colors, borders, text)
-* Smart redraws and minimalist centered layout
-* Built using [`ratatui`](https://github.com/ratatui-org/ratatui) + `crossterm`
-* Single binary, zero dependencies at runtime
-
-
-
-## Try Kitty Popup Mode
-
-You can use a floating terminal like `kitty` to simulate a popup view: | Might not work :(
-
-```sh
-kitty --override initial_window_width=50c \
-      --override initial_window_height=8c \
-      ./target/release/timers
-```
-
-## ⚙ Build 
-```sh
-git clone https://github.com/ryu-ryuk/time-rs-cli
-cd time-rs-cli
-cargo build --release
-./target/release/timers
-```
-
-## 🌫 Contributing
-
-I welcome contributions! Whether it's bug fixes, new features, or improvements, feel free to open issues or submit pull requests.
-
-### Development Setup
- 
-* Fork the repository.
-
-* Clone your fork.
-
-* Create a new branch for your feature or bugfix.
-
-* Make your changes and commit with clear messages.
-
-* Push your branch and open a pull request.
-
-#### Thank you for helping make Time-RS CLI better! 💜
+<footer style="position: fixed; border-radius: .5em .5em 0 0; bottom: 0; width: 85%; background-color: rgb(45,45,45); color: rgb(230,230,230); text-align: center;">
+  <p align="center" style="color:#a6adc8; font-size: 14.5px; line-height: 1.6; max-width: 700px; margin: auto;">
+    Currently using <strong>Rust 1.96.0</strong> with the <strong><em>nightly-gnu</em></strong> toolchain.
+  </p>
+</footer>
