@@ -1,6 +1,6 @@
 <header>
   <div align="left">
-    <h1 style="margin: 0; padding: 0; border: none;">Tempora</h1>
+    <h1 style="margin: 0; padding: 0; border: none;">Tempora - Suspended</h1>
     <p style="margin: 0; padding: 0;">Based on Time-RS.<br>Currently using <strong>Rust 1.96.0</strong> with the <strong><em>nightly-gnu</em></strong> toolchain.</p>
   </div>
 </header>
